@@ -10,7 +10,7 @@ Professor   : Clodonil Honorio Trigo
 Módulo      : https://github.com/clodonil/Python-Fundamentals/tree/master/modulo1/exercicios
 
 Data        : 20 de Março de 2019
-Descrição   : Listar todos os municípios, juntamente com sua população, se for maior ou igual a 70.000
+Descrição   : Listar todos os municípios, juntamente com sua população, se for maior que 70.000
 '''
 
 # Importar biblioteca
@@ -21,11 +21,14 @@ site = "https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_por_pop
 conexao = st(site)
 tabela = conexao.get_tables(0)
 
+# Cabeçalho (opcional)
 print("Municipio | População")
 print("----------------------")
 
+# Imprimir se atender à condição de população > 70.000
 for linha in tabela[1:] :
 	if int(linha[4]) > 70000 :
 		print(linha[2], '|', linha[4], "habitantes")
 
+# Rodapé (opcional)
 print("######################")

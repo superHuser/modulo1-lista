@@ -21,11 +21,14 @@ site = "https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_por_pop
 conexao = st(site)
 tabela = conexao.get_tables(0)
 
+# Cabeçalho (opcional)
 print("--------------------------------------")
 print("| N° IBGE | Municipio                |")
 print("--------------------------------------")
 
+# Imprimir os itens da lista
 for linha in tabela[1:] :
 	print("| " + linha[1] + " | " + linha[2])
 
+# Rodapé (opcional)
 print("######################################")

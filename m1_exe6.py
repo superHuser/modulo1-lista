@@ -22,7 +22,9 @@ conexao = st(site)
 tabela = conexao.get_tables(0)
 populacao = 0
 
+# Loop para somar a variável populacao com os valores encontrados nas linhas da tabela
 for linha in tabela[1:] :
 	populacao = populacao + int(linha[4])
 
+# Imprimir população total
 print("Total da população brasileira :", populacao)
