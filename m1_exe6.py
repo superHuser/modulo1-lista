@@ -1,8 +1,19 @@
 '''
-### A EDITAR ###
+Centro Universitário Adventista de São Paulo
+Campus SP
+
+Turma       : CI73A2019
+Aluno       : Gilson Nunes dos Santos Junior
+RA          : 96992
+Matéria     : Desenvolvimento Web
+Professor   : Clodonil Honorio Trigo
+Módulo      : https://github.com/clodonil/Python-Fundamentals/tree/master/modulo1/exercicios
+
+Data        : 20 de Março de 2019
+Descrição   : Apresenta a população total brasileira, somando todos os valores na tabela.
 '''
 
-# Impotar biblioteca
+# Importar biblioteca
 from lib.scrapy_table import Scrapy_Table as st
 
 # Criamos os parâmetros e variáveis
